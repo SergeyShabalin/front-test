@@ -47,7 +47,7 @@ p {
 }
 .menu-button:hover span
 {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
 }
 
 .menu-button span{
@@ -56,7 +56,7 @@ p {
     top: 14px;
     width: 30px;
     background-color: #ffffff;
-    height: 2px;
+    height: 3px;
     transition: 0.5s ease;
 }
 

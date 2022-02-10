@@ -1,5 +1,6 @@
 import React from 'react';
 import './Menu.css'
+import {NavLink} from "react-router-dom";
 
 const Menu = ({header, navItems, activeMenu, setActiveMenu}) => {
 
@@ -15,7 +16,7 @@ const Menu = ({header, navItems, activeMenu, setActiveMenu}) => {
                 <ul>
                     {navItems.map(item =>
                         <li>
-                            <a href={item.href}>{item.value}</a>
+                            <NavLink className = 'navlink' to={item.href}>{item.value}</NavLink>
                         </li>
                     )}
                 </ul>

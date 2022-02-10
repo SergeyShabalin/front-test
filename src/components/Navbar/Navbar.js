@@ -18,14 +18,14 @@ const Navbar = () => {
         setActiveMenu(!activeMenu)
     }
 
-    console.log(activeMenu)
     return (
         <div >
-            <nav className='navbar' onClick={toggleMenu} >
+            <nav className='navbar' >
                 <div onClick={toggleMenu} className="menu-button">
                     <span/>
-                </div>
 
+                </div>
+                <div> <b>FrontTestVOD</b> </div>
             </nav>
 
             <Menu
