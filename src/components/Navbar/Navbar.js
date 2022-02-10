@@ -6,27 +6,32 @@ import Menu from "./Menu";
 
 const Navbar = () => {
 
-const navItems = [
-    {value: "Главная страница", href: '/home'},
-    {value: "Страница ввода телефона", href: '/telephone'},
-    {value: "Информационная страница", href: '/info'}
+    const [activeMenu, setActiveMenu] = React.useState(false)
+
+    const navItems = [
+        {value: "Главная страница", href: '/home'},
+        {value: "Страница ввода телефона", href: '/telephone'},
+        {value: "Информационная страница", href: '/info'}
     ]
 
+    function toggleMenu(){
+        setActiveMenu(!activeMenu)
+    }
+
+    console.log(activeMenu)
     return (
-        <div>
+        <div >
+            <nav className='navbar' onClick={toggleMenu} >
+                <div onClick={toggleMenu} className="menu-button">
+                    <span/>
+                </div>
 
-        <nav className='navbar'>
-            <div className="menu-button">
-                <span/>
+            </nav>
 
-            </div>
-
-        </nav>
-            <main>
-
-            </main>
             <Menu
-                header = {'Main menu'}
+                activeMenu = {activeMenu}
+                setActiveMenu = {setActiveMenu}
+                header={'Main menu'}
                 navItems={navItems}
             />
         </div>

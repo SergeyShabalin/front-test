@@ -1,12 +1,17 @@
 import React from 'react';
 import './Menu.css'
 
-const Menu = ({header, navItems}) => {
+const Menu = ({header, navItems, activeMenu, setActiveMenu}) => {
+
+    function closeMenu() {
+        setActiveMenu(false)
+    }
+
     return (
-        <div className='menu'>
+        <div className={ activeMenu ?   'menu active' : 'menu' } onClick={closeMenu}>
             <div className='blur'/>
-            <div className='menu__content'>
-                <div className='menu__header'>{header}</div>
+            <div className='menu__content' onClick={e=>e.stopPropagation()}>
+                <div className='menu__header' >{header}</div>
                 <ul>
                     {navItems.map(item =>
                         <li>
