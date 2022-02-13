@@ -6,6 +6,7 @@ import {InfoPage} from './pages/InfoPage'
 import Navbar from "./components/Navbar/Navbar";
 
 
+
 function App() {
   return (
 

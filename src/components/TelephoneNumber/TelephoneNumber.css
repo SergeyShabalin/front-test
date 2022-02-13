@@ -1,22 +1,128 @@
-.container{
-    position: relative;
-    text-align: center;
-    color: white;
+
+.hope {
+    background-color: #ce2323;
+    position: fixed;
+    top: 30%;
+    right: 10px;
+    width: 300px;
+    height: 500px;
 }
-.main {
+
+.hopeOK {
+    background-color: #ce2323;
+    border: 3px solid #131315;
+    margin-top: 20%;
+    margin-left: 25%;
+    height: 40px;
+    width: 51%;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hopeOK:hover {
+    background-color: #131315;
+    color: #ce2323;
+}
+
+.hopeHidden {
+    position: fixed;
+    visibility: hidden;
+}
+
+.label {
+    color: white;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.images {
     width: 100%;
     height: 100%;
+}
 
+.qr {
+    transform: scale(0.8, 0.8);
+}
 
+.modalTelephone {
+    position: fixed;
+    margin-left: 10px;
+    top: 25%;
+    width: 400px;
+    height: 700px;
+    background-color: aqua;
+}
+
+.modalTelephoneHidden {
+    visibility: hidden;
+    position: fixed;
 }
 
 
-.centered {
-    width: 200px;
-    height: 100px;
+.buttons {
     background-color: aqua;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border: 3px solid #131315;
+    margin: 2px;
+    height: 40px;
+    width: 70px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttonClear {
+    background-color: aqua;
+    border: 3px solid #131315;
+    margin: 2px;
+    height: 40px;
+    width: 51%;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.confirmNumber {
+    background-color: aqua;
+    border: 3px solid #131315;
+    margin: 2px;
+    height: 50px;
+    width: 77.5%;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: #131315;
+    color: aqua;
+}
+
+.buttonClear:hover {
+    background-color: #131315;
+    color: aqua;
+}
+
+.buttons:active {
+    background-color: green;
+}
+
+.buttonsField {
+    width: 70%;
+    height: 30%;
+    margin-left: 22%;
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.telephoneNumber {
+    margin-left: 20%;
+    background-color: white;
+}
+
+.headerTelephone {
+    text-align: center;
+    margin: 5px;
 }
