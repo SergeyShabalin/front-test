@@ -5,7 +5,6 @@ import './Home.css'
 export const Home = () => {
     const [showBanner, setShowBanner] = React.useState(false)
 
-
     function onBanner() {
         setShowBanner(!showBanner)
     }
@@ -15,12 +14,11 @@ export const Home = () => {
             setTimeout(onBanner, 5000)
         }
 
-
     return (
         <div>
 
             <video className='video' autoPlay loop muted>
-                <source src={Volvo} type="video/mp4"/>
+                <source src={Volvo} type="video/mp4" />
             </video>
 
                 { showBanner ?
@@ -28,7 +26,10 @@ export const Home = () => {
                     <div className='textBanner'>
                         <h3>Только для вас самое выгодное предложение. Купи один VOLVO, второй в подарок</h3>
                     </div>
+
                 </div> : null}
+
+
         </div>
 
     )

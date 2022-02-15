@@ -1,28 +1,31 @@
 
 .hope {
-    background-color: #ce2323;
+    background-color: aqua;
+    box-shadow: 5px 25px 25px 25px rgba(10, 6, 6, 0.66);
     position: fixed;
     top: 30%;
     right: 10px;
-    width: 300px;
-    height: 500px;
+    width: 16%;
+    height: 48%;
+    border-radius: 8px;
 }
 
 .hopeOK {
-    background-color: #ce2323;
+    background-color: aqua;
     border: 3px solid #131315;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 25%;
     height: 40px;
     width: 51%;
     font-size: 20px;
     text-align: center;
+    border-radius: 8px;
     cursor: pointer;
 }
 
 .hopeOK:hover {
     background-color: #131315;
-    color: #ce2323;
+    color: aqua;
 }
 
 .hopeHidden {
@@ -31,27 +34,57 @@
 }
 
 .label {
-    color: white;
     font-size: 2vh;
     text-align: center;
 }
 
-.images {
-    width: 100%;
-    height: 100%;
+.images{
+    background-image: url("https://images.wallpaperscraft.ru/image/single/volvo_avtomobil_seryj_194075_1920x1080.jpg");
+    width: 100vw;
+    height: 100vh;
 }
 
 .qr {
-    transform: scale(0.8, 0.8);
+    transform: scale(0.9, 0.9);
+    border-radius: 25px;
 }
 
 .modalTelephone {
     position: fixed;
-    margin-left: 10px;
+    margin-left: 20px;
+    box-shadow: 5px 25px 25px 25px rgba(10, 6, 6, 0.66);
     top: 25%;
-    width: 400px;
-    height: 700px;
-    background-color: aqua;
+    width: 19%;
+    height: 60%;
+    background: rgba(0, 255, 255, 0.78);
+    border-radius: 5px;
+}
+
+.appDone{
+    position: fixed;
+    margin-left: 20px;
+    box-shadow: 5px 25px 25px 25px rgba(10, 6, 6, 0.66);
+    top: 25%;
+    width: 19%;
+    height: 60%;
+    background: rgba(0, 255, 255, 0.78);
+    border-radius: 5px;
+    opacity: 0;
+    animation: ani 1s forwards;
+}
+
+.appLabel{
+    font-size: 80px;
+    text-align: center;
+    margin-top: 35%;
+    line-height: 80%;
+}
+
+.appContext{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25%;
+
 }
 
 .modalTelephoneHidden {
@@ -64,8 +97,8 @@
     background-color: aqua;
     border: 3px solid #131315;
     margin: 2px;
-    height: 40px;
-    width: 70px;
+    height: 21.5%;
+    width: 24.5%;
     font-size: 20px;
     text-align: center;
     cursor: pointer;
@@ -75,22 +108,40 @@
     background-color: aqua;
     border: 3px solid #131315;
     margin: 2px;
-    height: 40px;
-    width: 51%;
+    height: 21.5%;
+    width: 50.5%;
     font-size: 20px;
     text-align: center;
     cursor: pointer;
 }
 
+.hhh {
+    background-color: white;
+}
+
 .confirmNumber {
     background-color: aqua;
     border: 3px solid #131315;
-    margin: 2px;
-    height: 50px;
-    width: 77.5%;
+    margin-top: 10%;
+    margin-left: 20%;
+    height: 6.5%;
+    width: 60%;
     font-size: 20px;
     text-align: center;
     cursor: pointer;
+}
+
+.confirmNumberDisabled {
+    border: 3px solid rgb(131, 128, 128);
+    margin-top: 10%;
+    margin-left: 20%;
+    height: 6.5%;
+    width: 60%;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: rgb(229, 229, 229) !important;
 }
 
 .buttons:hover {
@@ -108,21 +159,61 @@
 }
 
 .buttonsField {
-    width: 70%;
+    width: 80%;
     height: 30%;
-    margin-left: 22%;
-    margin-top: 20%;
+    margin-left: 20%;
+    margin-top: 5%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.telephoneNumber {
-    margin-left: 20%;
-    background-color: white;
+.telephone{
+    margin-top: 10%;
+    margin-left: 23%;
+    width: 56%;
+}
+
+.telephoneUncorrection{
+    color:red;
+}
+
+.manager {
+    width: 120%;
+    margin-left: -10%;
+    text-align: center;
 }
 
 .headerTelephone {
     text-align: center;
     margin: 5px;
+}
+
+.checkbox {
+    border: 3px solid rgb(7, 4, 4);
+    background-color: aqua;
+    margin-left: 23%;
+    margin-top: 10%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.checkboxLabel {
+    margin-top: -90%;
+    margin-left: 150%;
+    width: 200px;
+    color: #595a5d;
+}
+
+.bicheck {
+    transform: scale(2.5, 2.5);
+    margin-left: 8px;
+    margin-top: 6px;
+}
+
+.bicheckOf {
+    visibility: hidden;
+    margin-left: 8px;
+    margin-top: 6px;
 }

@@ -14,23 +14,23 @@ const Navbar = () => {
         {value: "Информационная страница", href: '/info'}
     ]
 
-    function toggleMenu(){
+    function toggleMenu() {
         setActiveMenu(!activeMenu)
     }
 
     return (
-        <div >
-            <nav className='navbar' >
+        <div>
+            <nav className='navbar'>
                 <div onClick={toggleMenu} className="menu-button">
                     <span/>
 
                 </div>
-                <div> <b>FrontTestVOD</b> </div>
+                <div><b>FrontTestVOD</b></div>
             </nav>
 
             <Menu
-                activeMenu = {activeMenu}
-                setActiveMenu = {setActiveMenu}
+                activeMenu={activeMenu}
+                setActiveMenu={setActiveMenu}
                 header={'Main menu'}
                 navItems={navItems}
             />

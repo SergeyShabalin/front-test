@@ -22,6 +22,7 @@
     animation: ani 2.5s forwards;
     align-items: center;
     display: flex;
+
 }
 
 @keyframes ani {
