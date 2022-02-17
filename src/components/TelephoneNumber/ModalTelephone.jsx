@@ -80,6 +80,7 @@ export default function ModalTelephone({setIsApplication, appDone}){
             <div className={isChecked ? 'confirmNumber' : 'confirmNumberDisabled'} onClick={toggleHope}>
                 Подтвердить номер
             </div>
+
         </div>
     )
 }

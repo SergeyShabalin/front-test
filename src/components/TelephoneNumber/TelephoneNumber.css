@@ -55,7 +55,7 @@
     box-shadow: 5px 25px 25px 25px rgba(10, 6, 6, 0.66);
     top: 25%;
     width: 19%;
-    height: 60%;
+    height: 65%;
     background: rgba(0, 255, 255, 0.78);
     border-radius: 5px;
 }
@@ -170,8 +170,8 @@
 
 .telephone{
     margin-top: 10%;
-    margin-left: 23%;
-    width: 56%;
+    margin-left: 18%;
+    width: 62%;
 }
 
 .telephoneUncorrection{
@@ -216,4 +216,41 @@
     visibility: hidden;
     margin-left: 8px;
     margin-top: 6px;
+}
+
+.closeModalQR{
+    position: fixed;
+    top: 52%;
+    right: -1.5%;
+    transform: scale(0.4, 0.4);
+}
+
+.closeModalLabel{
+    position: fixed;
+    color: white;
+    top: 83%;
+    right: 18%;
+    width: 15%;
+
+}
+
+.buttonCloseModal{
+    position: fixed;
+    top: 10%;
+    right: 7%;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(0, 255, 255, 0.8);
+    cursor: pointer;
+}
+.outlineClose{
+    transform: scale(6,6);
+    margin-top: 40%;
+}
+
+.buttonCloseModal:hover{
+    background-color: #090905;
+    color: aqua;
 }
